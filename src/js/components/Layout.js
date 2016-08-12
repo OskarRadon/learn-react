@@ -1,14 +1,12 @@
 import React from "react";
 
+import Feelings from "./Feelings"
+
 
 export default class Layout extends React.Component {
-	howImFeeling() {
-		return "happy";
-	}
-
 	render() {
 		return (
-			<h1>I'm feeling {this.howImFeeling()}</h1>
+			<Feelings />
 		)
 	}
 }
