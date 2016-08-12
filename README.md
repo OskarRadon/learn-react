@@ -4,4 +4,4 @@ This is a repo where I'll be teaching myself the React framework along with Flux
 ## Installation
  1. `npm install`
  2. `npm run dev`
- 3. go to http://localhost:8080
+ 3. go to [http://localhost:8080](http://localhost:8080)
