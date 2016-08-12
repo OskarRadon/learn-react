@@ -4,13 +4,23 @@ import Feelings from "./Feelings"
 
 
 export default class Layout extends React.Component {
-	render() {
-		const emotion = "fantastic"
+	constructor() {
+		super();
+		this.state = {
+			emotion: "good",
+		};
+	}
 
+	moodSwing(emotion) {
+		this.setState({emotion});
+	}
+
+
+	render() {
 		return (
 			<main>
 				<h1>Hey I'm Oskar</h1>
-				<Feelings emotion={emotion}/>
+				<Feelings moodSwing={this.moodSwing.bind(this)} emotion={this.state.emotion}/>
 			</main>
 		)
 	}
