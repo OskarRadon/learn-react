@@ -4,7 +4,7 @@ import React from "react";
 export default class Feelings extends React.Component {
 	handleChange(e) {
 		const emotion = e.target.value;
-		this.props.moodSwing();
+		this.props.moodSwing(emotion);
 	}
 
 	render() {
