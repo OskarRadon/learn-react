@@ -5,8 +5,17 @@ import Feelings from "./Feelings"
 
 export default class Layout extends React.Component {
 	render() {
+
+	let feelingsList = [
+		<Feelings />,
+		<Feelings />,
+		<Feelings />
+	]
+
 		return (
-			<Feelings />
+			<ul>
+				{feelingsList}
+			</ul>
 		)
 	}
 }
