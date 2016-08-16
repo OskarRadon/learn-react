@@ -1,5 +1,5 @@
 import React from "react";
-import Feelings from "./Feelings"
+import Feelings from "../components/Feelings"
 
 export default class Layout extends React.Component {
 	constructor() {
