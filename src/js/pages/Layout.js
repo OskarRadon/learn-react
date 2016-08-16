@@ -1,7 +1,5 @@
 import React from "react";
-
 import Feelings from "./Feelings"
-
 
 export default class Layout extends React.Component {
 	constructor() {
@@ -10,11 +8,9 @@ export default class Layout extends React.Component {
 			emotion: "good",
 		};
 	}
-
 	moodSwing(emotion) {
 		this.setState({emotion});
 	}
-
 
 	render() {
 		return (
