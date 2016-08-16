@@ -6,8 +6,8 @@ export default class Container extends React.Component {
 		return (
 			<main>
 				<nav>
-					<Link to="about">About</Link>
-					<Link to="/">Blog</Link>
+					<Link onlyActiveOnIndex to="/" activeStyle={{color:'red'}}>Blog</Link>
+					<Link to="about" activeStyle={{color:'red'}}>About</Link>
 				</nav>
 				{this.props.children}
 			</main>
