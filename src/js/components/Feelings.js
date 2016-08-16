@@ -11,7 +11,7 @@ export default class Feelings extends React.Component {
 		return (
 			<div>
 				<h1>I'm feeling {this.props.emotion}</h1>
-				<input onChange={this.handleChange.bind(this)} />
+				<input placeholder={this.props.emotion} onChange={this.handleChange.bind(this)} />
 				<p>Enter your feelings here</p>
 			</div>
 		)
