@@ -8,9 +8,16 @@ import About from "./pages/About"
 
 const app = document.getElementById('app');
 
+const NotFound = () => (
+	<h1>404 This page doesn't exist!</h1>
+)
+
 ReactDOM.render(
 	<Router history={hashHistory}> 
 		<Route path="/" component={Layout}>
+			<IndexRoute component={Blog}></IndexRoute>
+			<Route path="about" component={About}></Route>
+			<Route path='*' component={NotFound} />
 		</Route>
 	</Router>,
 app);
