@@ -22,9 +22,11 @@
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-dashboard": "^0.1.6"
+  },
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
+    "dev": "webpack-dashboard -- webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
