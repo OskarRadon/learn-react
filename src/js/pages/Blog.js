@@ -6,6 +6,6 @@ export default class Layout extends React.Component {
 			<main>
 				<h1>My blog</h1>
 			</main>
-		)
+		);
 	}
 }

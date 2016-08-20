@@ -1,5 +1,5 @@
 import React from "react";
-import Feelings from "../components/Feelings"
+import Feelings from "../components/Feelings";
 
 export default class Layout extends React.Component {
 	constructor() {
@@ -18,6 +18,6 @@ export default class Layout extends React.Component {
 				<h1>Hey I'm Oskar</h1>
 				<Feelings moodSwing={this.moodSwing.bind(this)} emotion={this.state.emotion}/>
 			</main>
-		)
+		);
 	}
 }
