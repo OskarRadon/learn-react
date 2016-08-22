@@ -1,12 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, hashHistory } from "react-router";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import Container from "./pages/Container";
-import Blog from "./pages/Blog";
-import About from "./pages/About";
+import Container from './pages/Container';
+import Blog from './pages/Blog';
+import About from './pages/About';
+import ToDo from './pages/ToDo';
 
-const app = document.getElementById("app");
+const app = document.getElementById('app');
 
 const NotFound = () => (
 	<h1>404 This page doesn't exist!</h1>
@@ -14,9 +15,10 @@ const NotFound = () => (
 
 ReactDOM.render(
 	<Router history={hashHistory}> 
-		<Route path="/" component={Container}>
+		<Route path='/' component={Container}>
 			<IndexRoute component={Blog}></IndexRoute>
-			<Route path="about" component={About}></Route>
+			<Route path='about' component={About}></Route>
+			<Route path='todo' component={ToDo}></Route>
 			<Route path='*' component={NotFound} />
 		</Route>
 	</Router>,

@@ -1,11 +1,11 @@
-import React from "react";
-import Feelings from "../components/Feelings";
+import React from 'react';
+import Feelings from '../components/Feelings';
 
 export default class Layout extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			emotion: "good",
+			emotion: 'good',
 		};
 	}
 	moodSwing(emotion) {
